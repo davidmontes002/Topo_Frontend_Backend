@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Panel de perfil de TopoYork. Demostración visual con datos de ejemplo.">
+  <title>Mi perfil · TopoYork</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="profile-page">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="dashboard">
+    <aside class="sidebar" aria-label="Panel de usuario">
+      <div class="brand"><img src="assets/img/ballena-topoyork.png" alt="" width="60" height="60"><span>Topo<span class="brand-accent">York</span></span></div>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><span class="nav-item" aria-disabled="true"><span class="symbol" aria-hidden="true">⌂</span>Inicio</span></li>
+          <li><span class="nav-item" aria-disabled="true"><span class="icon icon-calendar" aria-hidden="true"></span>Mis reservas</span></li>
+          <li><span class="nav-item" aria-disabled="true"><span class="icon icon-pin" aria-hidden="true"></span>Explorar lugares</span></li>
+          <li><span class="nav-item" aria-disabled="true"><span class="symbol" aria-hidden="true">☆</span>Promociones</span></li>
+          <li><a class="nav-item active" href="perfil.html" aria-current="page"><span class="icon icon-person" aria-hidden="true"></span>Mi perfil</a></li>
+          <li><span class="nav-item" aria-disabled="true"><span class="icon icon-bell" aria-hidden="true"></span>Notificaciones</span></li>
+          <li><span class="nav-item" aria-disabled="true"><span class="symbol" aria-hidden="true">⚙</span>Configuración</span></li>
+        </ul>
+      </nav>
+      <span class="nav-item logout" aria-disabled="true"><span class="symbol" aria-hidden="true">↪</span>Cerrar sesión</span>
+      <p class="sidebar-note">Un puerto, muchas historias.</p>
+    </aside>
+    <div class="dashboard-main">
+      <header class="mobile-header">
+        <div class="brand brand-light"><img src="assets/img/ballena-topoyork.png" alt="" width="48" height="48"><span>Topo<span class="brand-accent">York</span></span></div>
+        <details class="mobile-menu">
+          <summary aria-label="Abrir menú de usuario"><span aria-hidden="true">☰</span></summary>
+          <nav aria-label="Menú de usuario móvil">
+            <ul>
+              <li><span aria-disabled="true">Inicio</span></li>
+              <li><span aria-disabled="true">Mis reservas</span></li>
+              <li><span aria-disabled="true">Explorar lugares</span></li>
+              <li><span aria-disabled="true">Promociones</span></li>
+              <li><a href="perfil.html" aria-current="page">Mi perfil</a></li>
+              <li><span aria-disabled="true">Notificaciones</span></li>
+              <li><span aria-disabled="true">Configuración</span></li>
+              <li><span aria-disabled="true">Cerrar sesión</span></li>
+            </ul>
+          </nav>
+        </details>
+      </header>
+      <header class="profile-header">
+        <h1>Mi perfil</h1>
+        <div class="header-account">
+          <button class="icon-button" type="button" aria-label="Notificaciones (próximamente)" aria-describedby="demo-note"><span class="icon icon-bell" aria-hidden="true"></span></button>
+          <span class="avatar avatar-small" role="img" aria-label="Avatar predeterminado"></span>
+          <span class="account-name">David Montes</span>
+        </div>
+      </header>
+      <main class="profile-content" id="contenido">
+        <section class="profile-summary panel" aria-labelledby="user-name">
+          <span class="avatar avatar-large" role="img" aria-label="Avatar genérico de usuario"></span>
+          <div class="profile-identity">
+            <p class="eyebrow">Tu cuenta TopoYork</p>
+            <h2 id="user-name">David Montes</h2>
+            <p><span aria-hidden="true">✉</span> david.montes@ejemplo.com</p>
+            <p><span aria-hidden="true">☎</span> 555 123 4567</p>
+          </div>
+          <a class="button button-outline edit-profile" href="#nombre">Editar perfil <span aria-hidden="true">↗</span></a>
+        </section>
+        <section class="panel profile-editor" aria-labelledby="personal-title">
+          <header class="panel-heading"><h2 id="personal-title">Información personal</h2></header>
+          <form class="profile-form" aria-describedby="demo-note">
+            <button type="submit" hidden disabled>Enviar</button>
+            <div class="profile-fields">
+              <div class="field"><label for="nombre">Nombre</label><input id="nombre" type="text" autocomplete="given-name" value="David"></div>
+              <div class="field"><label for="apellidos">Apellidos</label><input id="apellidos" type="text" autocomplete="family-name" value="Montes"></div>
+              <div class="field"><label for="correo">Correo electrónico</label><input id="correo" type="email" autocomplete="email" value="david.montes@ejemplo.com"></div>
+              <div class="field"><label for="telefono">Teléfono</label><input id="telefono" type="tel" autocomplete="tel" value="555 123 4567"></div>
+            </div>
+            <div class="photo-field">
+              <label for="foto">Fotografía de perfil</label>
+              <div class="photo-controls">
+                <span class="avatar avatar-medium" role="img" aria-label="Avatar predeterminado"></span>
+                <div class="photo-picker">
+                  <input class="visually-hidden" id="foto" type="file" accept="image/*" aria-describedby="photo-help">
+                  <label class="button button-outline" for="foto">Cambiar foto</label>
+                </div>
+              </div>
+              <p class="field-help" id="photo-help">Puedes seleccionar una imagen. La vista previa y el guardado aún no están disponibles.</p>
+            </div>
+            <div class="profile-actions"><p class="demo-note" id="demo-note">Datos de ejemplo. Los cambios no se envían ni se guardan.</p><button class="button button-primary" type="button" aria-describedby="demo-note">Guardar cambios</button></div>
+          </form>
+        </section>
+        <p class="profile-footer">TopoYork · Tu conexión con Topolobampo.</p>
+      </main>
+    </div>
+  </div>
+  <nav class="bottom-nav" aria-label="Navegación inferior">
+    <span aria-disabled="true"><span class="symbol" aria-hidden="true">⌂</span>Inicio</span>
+    <span aria-disabled="true"><span class="icon icon-calendar" aria-hidden="true"></span>Reservas</span>
+    <span aria-disabled="true"><span class="icon icon-pin" aria-hidden="true"></span>Explorar</span>
+    <span aria-disabled="true"><span class="symbol" aria-hidden="true">☆</span>Promociones</span>
+    <a href="perfil.html" aria-current="page"><span class="icon icon-person" aria-hidden="true"></span>Perfil</a>
+  </nav>
+</body>
+</html>

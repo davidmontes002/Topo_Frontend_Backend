@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Descubre Topolobampo con TopoYork. Vista de inicio de sesión.">
+  <title>Inicia sesión · TopoYork</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="auth-page">
+  <a class="skip-link" href="#contenido">Saltar al formulario</a>
+  <main class="auth-layout">
+    <section class="auth-story" aria-labelledby="bienvenida">
+      <a class="brand brand-light" href="index.html" aria-label="TopoYork, inicio de sesión">
+        <img src="assets/img/ballena-topoyork.png" alt="" width="76" height="76">
+        <span>Topo<span class="brand-accent">York</span></span>
+      </a>
+      <div class="story-content">
+        <p class="eyebrow">Topolobampo, Sinaloa</p>
+        <h1 id="bienvenida">Descubre, reserva y disfruta en un solo lugar.</h1>
+        <p class="story-description">El mar, los sabores y los mejores rincones de nuestro puerto te esperan.</p>
+        <ul class="benefits">
+          <li><span class="icon icon-compass" aria-hidden="true"></span>Encuentra tu próxima visita.</li>
+          <li><span class="icon icon-calendar" aria-hidden="true"></span>Reserva mesas y paseos.</li>
+          <li><span class="icon icon-pin" aria-hidden="true"></span>Descubre lugares increíbles.</li>
+          <li><span class="symbol" aria-hidden="true">☆</span>Promociones exclusivas.</li>
+        </ul>
+      </div>
+      <p class="story-footer">Tu próxima historia comienza en el puerto.</p>
+      <div class="seascape" aria-hidden="true"><span class="lighthouse"></span></div>
+    </section>
+    <section class="auth-main" id="contenido" aria-labelledby="form-title">
+      <div class="auth-card">
+        <header class="form-heading">
+          <h2 id="form-title">Bienvenido de nuevo</h2>
+          <p>Inicia sesión para continuar en TopoYork.</p>
+        </header>
+        <form class="form-stack" aria-describedby="demo-note">
+          <!-- El botón deshabilitado también impide el envío implícito con Enter. -->
+          <button type="submit" hidden disabled>Enviar</button>
+          <div class="field">
+            <label for="correo">Correo electrónico</label>
+            <input id="correo" type="email" autocomplete="email" placeholder="tu.correo@ejemplo.com">
+          </div>
+          <div class="field">
+            <label for="contrasena">Contraseña</label>
+            <input id="contrasena" type="password" autocomplete="current-password" placeholder="Ingresa tu contraseña">
+          </div>
+          <div class="form-options">
+            <label class="check-label" for="recordarme"><input id="recordarme" type="checkbox">Recordarme</label>
+            <span class="text-accent">¿Olvidaste tu contraseña?</span>
+          </div>
+          <button class="button button-primary" type="button" aria-describedby="demo-note">Iniciar sesión</button>
+        </form>
+        <div class="divider"><span>O continúa con</span></div>
+        <div class="social-buttons">
+          <button class="button button-social" type="button" aria-describedby="demo-note"><span class="google-mark" aria-hidden="true">G</span>Continuar con Google</button>
+          <button class="button button-social" type="button" aria-describedby="demo-note"><span class="facebook-mark" aria-hidden="true">f</span>Continuar con Facebook</button>
+        </div>
+        <p class="auth-switch">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p>
+        <p class="demo-note" id="demo-note">Vista de demostración. El inicio de sesión aún no está disponible.</p>
+      </div>
+      <p class="auth-footer">TopoYork · Cerca del mar, cerca de ti.</p>
+    </section>
+  </main>
+</body>
+</html>
