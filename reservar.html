@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reservar en TopoYork. Demostración visual con datos de ejemplo.">
+  <title>Reservar · TopoYork</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="profile-page discovery-page">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="dashboard">
+    <aside class="sidebar" aria-label="Panel de usuario">
+      <div class="brand"><img src="assets/img/ballena-topoyork.png" alt="" width="60" height="60"><span>Topo<span class="brand-accent">York</span></span></div>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><span class="nav-item" aria-disabled="true"><span class="symbol" aria-hidden="true">⌂</span>Inicio</span></li>
+          <li><a class="nav-item" href="mis-reservas.html"><span class="icon icon-calendar" aria-hidden="true"></span>Mis reservas</a></li>
+          <li><a class="nav-item active" href="explorar.html" aria-current="true"><span class="icon icon-pin" aria-hidden="true"></span>Explorar lugares</a></li>
+          <li><span class="nav-item" aria-disabled="true"><span class="symbol" aria-hidden="true">☆</span>Promociones</span></li>
+          <li><a class="nav-item" href="perfil.html"><span class="icon icon-person" aria-hidden="true"></span>Mi perfil</a></li>
+          <li><span class="nav-item" aria-disabled="true"><span class="icon icon-bell" aria-hidden="true"></span>Notificaciones</span></li>
+          <li><span class="nav-item" aria-disabled="true"><span class="symbol" aria-hidden="true">⚙</span>Configuración</span></li>
+        </ul>
+      </nav>
+      <span class="nav-item logout" aria-disabled="true"><span class="symbol" aria-hidden="true">↪</span>Cerrar sesión</span>
+      <p class="sidebar-note">Un puerto, muchas historias.</p>
+    </aside>
+    <div class="dashboard-main">
+      <header class="mobile-header">
+        <div class="brand brand-light"><img src="assets/img/ballena-topoyork.png" alt="" width="48" height="48"><span>Topo<span class="brand-accent">York</span></span></div>
+        <details class="mobile-menu">
+          <summary aria-label="Abrir menú de usuario"><span aria-hidden="true">☰</span></summary>
+          <nav aria-label="Menú de usuario móvil">
+            <ul>
+              <li><span aria-disabled="true">Inicio</span></li>
+              <li><a href="mis-reservas.html">Mis reservas</a></li>
+              <li><a href="explorar.html" aria-current="true">Explorar lugares</a></li>
+              <li><span aria-disabled="true">Promociones</span></li>
+              <li><a href="perfil.html">Mi perfil</a></li>
+              <li><span aria-disabled="true">Notificaciones</span></li>
+              <li><span aria-disabled="true">Configuración</span></li>
+              <li><span aria-disabled="true">Cerrar sesión</span></li>
+            </ul>
+          </nav>
+        </details>
+      </header>
+      <header class="profile-header">
+        <h1>Reservar</h1>
+        <div class="header-account">
+          <button class="icon-button" type="button" aria-label="Notificaciones (próximamente)" aria-describedby="demo-note"><span class="icon icon-bell" aria-hidden="true"></span></button>
+          <span class="avatar avatar-small" role="img" aria-label="Avatar predeterminado"></span>
+          <span class="account-name">David Montes</span>
+        </div>
+      </header>
+      <main class="profile-content journey-content" id="contenido">
+
+ <nav class="breadcrumbs" aria-label="Ruta de navegación"><a href="explorar.html" aria-current="true">Explorar lugares</a><span aria-hidden="true">/</span><span>Reservar</span></nav>
+ <p class="preview-notice" id="demo-note"><span class="preview-label">Vista de muestra</span> Formulario sin envío de datos. No se consulta disponibilidad, no se realizan cobros y no se genera ninguna reserva.</p>
+ <nav class="choice-links" aria-label="Tipo de reserva"><a href="#paseo">Reservar paseo</a><a href="#mesa">Reservar mesa</a></nav>
+ <section class="detail-view" id="mesa" aria-labelledby="booking-mesa"><div class="section-top"><div><p class="eyebrow">Planea tu visita</p><h2 id="booking-mesa">Reserva de mesa</h2><p>Mesa del Puerto · Ejemplo visual</p></div><a class="text-link" href="detalle.html#restaurante">Volver al detalle</a></div>
+ <div class="booking-layout"><form class="panel booking-form" aria-describedby="demo-note help-mesa"><button type="submit" hidden disabled>Enviar</button>
+ <fieldset><legend>1. Fecha y visitantes</legend><div class="booking-fields"><div class="field"><label for="fecha-mesa">Fecha de la visita</label><input id="fecha-mesa" type="date"></div><div class="field"><label for="hora-mesa">Horario</label><select id="hora-mesa"><option value="" selected>Selecciona un horario</option><option>13:00</option><option>15:00</option><option>18:00</option><option>20:00</option></select></div><div class="field"><label for="personas">Número de personas</label><select id="personas"><option>1 persona</option><option selected>2 personas</option><option>3 personas</option><option>4 personas</option><option>5 personas</option><option>6 personas</option></select></div></div><p class="field-help" id="help-mesa">Grupo de ejemplo: de 1 a 6 personas. Los horarios no representan disponibilidad real.</p></fieldset>
+ <fieldset><legend>2. Datos de contacto</legend><div class="booking-fields"><div class="field"><label for="nombre-mesa">Nombre completo</label><input id="nombre-mesa" type="text" autocomplete="name" placeholder="Tu nombre y apellidos"></div><div class="field"><label for="telefono-mesa">Teléfono</label><input id="telefono-mesa" type="tel" autocomplete="tel" placeholder="Tu número de contacto"></div><div class="field field-wide"><label for="correo-mesa">Correo electrónico</label><input id="correo-mesa" type="email" autocomplete="email" placeholder="tu.correo@ejemplo.com"></div></div></fieldset>
+ <div class="booking-actions"><p class="demo-note">Puedes recorrer los campos. El botón no envía solicitudes ni crea una reserva.</p><button class="button button-primary" type="button" aria-describedby="demo-note">Solicitar reserva</button><a class="text-link" href="mis-reservas.html">Consultar reservas de muestra <span aria-hidden="true">→</span></a></div></form>
+ <aside class="panel booking-summary" aria-label="Información de referencia"><div class="place-art art-restaurante" aria-hidden="true"><span class="art-sun"></span><span class="art-land"></span><span class="art-object"></span><span class="art-caption">Ilustración de referencia</span></div><div class="summary-body"><span class="category-tag">Datos de ejemplo</span><h3>Mesa del Puerto</h3><dl class="summary-list"><div><dt>Tipo de reserva</dt><dd>Mesa de restaurante</dd></div><div><dt>Consumo orientativo</dt><dd>$280 MXN / persona</dd></div><div><dt>Anticipo</dt><dd>No se procesa</dd></div></dl><p class="field-help">El consumo es una referencia de ejemplo y no constituye un cargo ni un total a pagar.</p><div class="soft-callout"><strong>Una reserva comienza con una solicitud</strong><p>En la futura versión funcional, se comprobará la disponibilidad antes de confirmar.</p></div></div></aside></div></section><section class="detail-view detail-view-default" id="paseo" aria-labelledby="booking-paseo"><div class="section-top"><div><p class="eyebrow">Planea tu visita</p><h2 id="booking-paseo">Reserva de paseo</h2><p>Ruta de la Bahía · Ejemplo visual</p></div><a class="text-link" href="detalle.html#paseo">Volver al detalle</a></div>
+ <div class="booking-layout"><form class="panel booking-form" aria-describedby="demo-note help-paseo"><button type="submit" hidden disabled>Enviar</button>
+ <fieldset><legend>1. Fecha y visitantes</legend><div class="booking-fields"><div class="field"><label for="fecha-paseo">Fecha de la visita</label><input id="fecha-paseo" type="date"></div><div class="field"><label for="hora-paseo">Horario</label><select id="hora-paseo"><option value="" selected>Selecciona un horario</option><option>10:00</option><option>16:00</option></select></div><div class="field"><label for="adultos">Adultos</label><input id="adultos" type="number" min="1" max="8" value="2"></div><div class="field"><label for="ninos">Niños</label><input id="ninos" type="number" min="0" max="7" value="0"></div></div><p class="field-help" id="help-paseo">Máximo de ejemplo: 8 pasajeros entre adultos y niños. El cupo no se valida en esta demostración.</p></fieldset>
+ <fieldset><legend>2. Datos de contacto</legend><div class="booking-fields"><div class="field"><label for="nombre-paseo">Nombre completo</label><input id="nombre-paseo" type="text" autocomplete="name" placeholder="Tu nombre y apellidos"></div><div class="field"><label for="telefono-paseo">Teléfono</label><input id="telefono-paseo" type="tel" autocomplete="tel" placeholder="Tu número de contacto"></div><div class="field field-wide"><label for="correo-paseo">Correo electrónico</label><input id="correo-paseo" type="email" autocomplete="email" placeholder="tu.correo@ejemplo.com"></div></div></fieldset>
+ <div class="booking-actions"><p class="demo-note">Puedes recorrer los campos. El botón no envía solicitudes ni crea una reserva.</p><button class="button button-primary" type="button" aria-describedby="demo-note">Solicitar reserva</button><a class="text-link" href="mis-reservas.html">Consultar reservas de muestra <span aria-hidden="true">→</span></a></div></form>
+ <aside class="panel booking-summary" aria-label="Información de referencia"><div class="place-art art-paseo" aria-hidden="true"><span class="art-sun"></span><span class="art-land"></span><span class="art-object"></span><span class="art-caption">Ilustración de referencia</span></div><div class="summary-body"><span class="category-tag">Datos de ejemplo</span><h3>Ruta de la Bahía</h3><dl class="summary-list"><div><dt>Duración de ejemplo</dt><dd>90 minutos</dd></div><div><dt>Tarifa por adulto</dt><dd>$350 MXN</dd></div><div><dt>Tarifa por niño</dt><dd>$250 MXN</dd></div></dl><p class="field-help">Los importes son de referencia. No se calcula un total ni se procesa ningún pago.</p><div class="soft-callout"><strong>Una reserva comienza con una solicitud</strong><p>En la futura versión funcional, se comprobará la disponibilidad antes de confirmar.</p></div></div></aside></div></section>
+
+        <p class="profile-footer">TopoYork · Tu conexión con Topolobampo.</p>
+      </main>
+    </div>
+  </div>
+  <nav class="bottom-nav" aria-label="Navegación inferior">
+    <span aria-disabled="true"><span class="symbol" aria-hidden="true">⌂</span>Inicio</span>
+    <a href="mis-reservas.html"><span class="icon icon-calendar" aria-hidden="true"></span>Reservas</a>
+    <a href="explorar.html" aria-current="true"><span class="icon icon-pin" aria-hidden="true"></span>Explorar</a>
+    <span aria-disabled="true"><span class="symbol" aria-hidden="true">☆</span>Promociones</span>
+    <a href="perfil.html"><span class="icon icon-person" aria-hidden="true"></span>Perfil</a>
+  </nav>
+</body>
+</html>

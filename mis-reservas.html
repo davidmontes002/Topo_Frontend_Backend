@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mis reservas en TopoYork. Demostración visual con datos de ejemplo.">
+  <title>Mis reservas · TopoYork</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="profile-page discovery-page">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="dashboard">
+    <aside class="sidebar" aria-label="Panel de usuario">
+      <div class="brand"><img src="assets/img/ballena-topoyork.png" alt="" width="60" height="60"><span>Topo<span class="brand-accent">York</span></span></div>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><span class="nav-item" aria-disabled="true"><span class="symbol" aria-hidden="true">⌂</span>Inicio</span></li>
+          <li><a class="nav-item active" href="mis-reservas.html" aria-current="page"><span class="icon icon-calendar" aria-hidden="true"></span>Mis reservas</a></li>
+          <li><a class="nav-item" href="explorar.html"><span class="icon icon-pin" aria-hidden="true"></span>Explorar lugares</a></li>
+          <li><span class="nav-item" aria-disabled="true"><span class="symbol" aria-hidden="true">☆</span>Promociones</span></li>
+          <li><a class="nav-item" href="perfil.html"><span class="icon icon-person" aria-hidden="true"></span>Mi perfil</a></li>
+          <li><span class="nav-item" aria-disabled="true"><span class="icon icon-bell" aria-hidden="true"></span>Notificaciones</span></li>
+          <li><span class="nav-item" aria-disabled="true"><span class="symbol" aria-hidden="true">⚙</span>Configuración</span></li>
+        </ul>
+      </nav>
+      <span class="nav-item logout" aria-disabled="true"><span class="symbol" aria-hidden="true">↪</span>Cerrar sesión</span>
+      <p class="sidebar-note">Un puerto, muchas historias.</p>
+    </aside>
+    <div class="dashboard-main">
+      <header class="mobile-header">
+        <div class="brand brand-light"><img src="assets/img/ballena-topoyork.png" alt="" width="48" height="48"><span>Topo<span class="brand-accent">York</span></span></div>
+        <details class="mobile-menu">
+          <summary aria-label="Abrir menú de usuario"><span aria-hidden="true">☰</span></summary>
+          <nav aria-label="Menú de usuario móvil">
+            <ul>
+              <li><span aria-disabled="true">Inicio</span></li>
+              <li><a href="mis-reservas.html" aria-current="page">Mis reservas</a></li>
+              <li><a href="explorar.html">Explorar lugares</a></li>
+              <li><span aria-disabled="true">Promociones</span></li>
+              <li><a href="perfil.html">Mi perfil</a></li>
+              <li><span aria-disabled="true">Notificaciones</span></li>
+              <li><span aria-disabled="true">Configuración</span></li>
+              <li><span aria-disabled="true">Cerrar sesión</span></li>
+            </ul>
+          </nav>
+        </details>
+      </header>
+      <header class="profile-header">
+        <h1>Mis reservas</h1>
+        <div class="header-account">
+          <button class="icon-button" type="button" aria-label="Notificaciones (próximamente)" aria-describedby="demo-note"><span class="icon icon-bell" aria-hidden="true"></span></button>
+          <span class="avatar avatar-small" role="img" aria-label="Avatar predeterminado"></span>
+          <span class="account-name">David Montes</span>
+        </div>
+      </header>
+      <main class="profile-content journey-content" id="contenido">
+
+ <p class="preview-notice" id="demo-note"><span class="preview-label">Vista de muestra</span> Las siguientes reservas son ficticias y se muestran siempre. Los formularios de reserva no modifican esta lista.</p>
+ <section class="section-top reservations-heading" aria-labelledby="reservations-title"><div><p class="eyebrow">Tus planes en el puerto</p><h2 id="reservations-title">Cada visita, una nueva historia.</h2><p>Consulta cómo se verían tus próximas visitas y tu historial.</p></div><a class="button button-primary" href="explorar.html">Explorar lugares <span aria-hidden="true">→</span></a></section>
+ <div class="reservation-stats" aria-label="Resumen de las reservas de muestra"><div><span>Solicitadas</span><strong>1</strong><p>Pendiente de confirmación</p></div><div><span>Completadas</span><strong>1</strong><p>Una visita en el historial</p></div><div><span>Canceladas</span><strong>1</strong><p>Sin acciones pendientes</p></div></div>
+ <section aria-labelledby="reservation-list-title"><div class="section-top"><div><h2 id="reservation-list-title">Reservas de muestra</h2><p>3 registros ilustrativos · Todos los estados</p></div></div><div class="reservation-list"><article class="panel reservation-card"><div class="place-art art-paseo" aria-hidden="true"><span class="art-sun"></span><span class="art-land"></span><span class="art-object"></span><span class="art-caption">Ilustración de referencia</span></div><div class="reservation-body"><div class="card-meta"><span class="category-tag">Paseo en lancha</span><span class="status-badge status-pending">Solicitada</span></div><h3>Ruta de la Bahía</h3><dl class="reservation-facts"><div><dt>Fecha de ejemplo</dt><dd>12 dic 2026</dd></div><div><dt>Horario</dt><dd>10:00</dd></div><div><dt>Visitantes</dt><dd>2 adultos</dd></div></dl><div class="reservation-links"><a class="text-link" href="detalle.html#paseo">Ver lugar <span aria-hidden="true">↗</span></a><span class="field-help">Referencia ficticia: TY-EJ-001</span></div><details class="reservation-details"><summary>Ver detalle de la reserva</summary><p>Ejemplo de una solicitud pendiente de confirmación. No representa un lugar apartado.</p><p>Usuario de muestra: David Montes. Esta información no proviene de una cuenta real.</p></details></div></article><article class="panel reservation-card"><div class="place-art art-restaurante" aria-hidden="true"><span class="art-sun"></span><span class="art-land"></span><span class="art-object"></span><span class="art-caption">Ilustración de referencia</span></div><div class="reservation-body"><div class="card-meta"><span class="category-tag">Mesa de restaurante</span><span class="status-badge status-complete">Completada</span></div><h3>Mesa del Puerto</h3><dl class="reservation-facts"><div><dt>Fecha de ejemplo</dt><dd>15 nov 2026</dd></div><div><dt>Horario</dt><dd>15:00</dd></div><div><dt>Visitantes</dt><dd>2 personas</dd></div></dl><div class="reservation-links"><a class="text-link" href="detalle.html#restaurante">Ver lugar <span aria-hidden="true">↗</span></a><span class="field-help">Referencia ficticia: TY-EJ-002</span></div><details class="reservation-details"><summary>Ver detalle de la reserva</summary><p>Ejemplo de una visita que ya terminó. Se conserva como parte del historial visual.</p><p>Usuario de muestra: David Montes. Esta información no proviene de una cuenta real.</p></details></div></article><article class="panel reservation-card"><div class="place-art art-paseo" aria-hidden="true"><span class="art-sun"></span><span class="art-land"></span><span class="art-object"></span><span class="art-caption">Ilustración de referencia</span></div><div class="reservation-body"><div class="card-meta"><span class="category-tag">Paseo en lancha</span><span class="status-badge status-cancelled">Cancelada</span></div><h3>Ruta de la Bahía</h3><dl class="reservation-facts"><div><dt>Fecha de ejemplo</dt><dd>08 nov 2026</dd></div><div><dt>Horario</dt><dd>16:00</dd></div><div><dt>Visitantes</dt><dd>3 adultos</dd></div></dl><div class="reservation-links"><a class="text-link" href="detalle.html#paseo">Ver lugar <span aria-hidden="true">↗</span></a><span class="field-help">Referencia ficticia: TY-EJ-003</span></div><details class="reservation-details"><summary>Ver detalle de la reserva</summary><p>Ejemplo de una solicitud cancelada. No representa un cobro ni un reembolso real.</p><p>Usuario de muestra: David Montes. Esta información no proviene de una cuenta real.</p></details></div></article></div></section>
+ <aside class="soft-callout reservation-help"><strong>¿Qué sigue después de solicitar?</strong><p>En la versión funcional, aquí podrás consultar el estado actualizado de tus reservas. Por ahora, los estados y referencias son únicamente ejemplos visuales.</p></aside>
+
+        <p class="profile-footer">TopoYork · Tu conexión con Topolobampo.</p>
+      </main>
+    </div>
+  </div>
+  <nav class="bottom-nav" aria-label="Navegación inferior">
+    <span aria-disabled="true"><span class="symbol" aria-hidden="true">⌂</span>Inicio</span>
+    <a href="mis-reservas.html" aria-current="page"><span class="icon icon-calendar" aria-hidden="true"></span>Reservas</a>
+    <a href="explorar.html"><span class="icon icon-pin" aria-hidden="true"></span>Explorar</a>
+    <span aria-disabled="true"><span class="symbol" aria-hidden="true">☆</span>Promociones</span>
+    <a href="perfil.html"><span class="icon icon-person" aria-hidden="true"></span>Perfil</a>
+  </nav>
+</body>
+</html>
